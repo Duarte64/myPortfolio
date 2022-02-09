@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(5, 5, 5);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+    -o-user-select:none;
+}
+
+main {
+    margin-top: 8%;
+}
+
+h1 {
+    color: #B81447; 
+    font-size: 6em; 
+    font-weight: 600;
+}
+
+h2, h3 {
+    font-size: 1.5em; 
+    color: #8b8b8b;
+    margin-top: 1em;
+}
+
+h3 {
+    margin-top: 4em;
+}
+
+.footer__contacts > a > img {
+    margin: 16px 8px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.footer__contacts > a > img:hover {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(-60deg) brightness(75%) contrast(100%);
+}
+
+@media screen and (max-width: 1024px) {
+    
+    main {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h1, h2 {
+        padding: 0em 1.2em;
+    }
+
+    h3 {
+        margin-top: 1.6em;
+    }
+
+    .align__mobile {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

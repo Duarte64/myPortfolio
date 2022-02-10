@@ -71,17 +71,46 @@ header > nav > li > a:hover {
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(-60deg) brightness(75%) contrast(100%);
 }
 
-#about__me > p {
-    color: #8b8b8b;
+#about__me > .box > h1 {
     font-size: 24px;
-    padding: 0px 8em;
+}
+
+.box {
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+    text-indent: 2em;
+    margin-top: 7%;
+}
+
+.box__life {
+    background-image: url('../images/waves-black.gif');
+    width: 100px;
+    height: 465px;
+    margin-left: -40px;
+    margin-top: -100px;
+    position: absolute;
+    z-index: -1;
+}
+
+#about__me > .box > p {
+    color: #8b8b8b;
+    font-size: 22px;
+    padding: 0.75em 2em;
+    margin: auto;
     line-height: 1.5em;
+}
+
+#about__me > .box > p > span {
+    color: #B81447;
 }
 
 #skills > p {
     color: #8b8b8b;
-    font-size: 24px;
-    padding: 0px 8em;
+    font-size: 22px;
+    max-width: 980px;
+    padding: 0.75em 2em;
+    margin: auto;
     line-height: 1.5em;
 }
 

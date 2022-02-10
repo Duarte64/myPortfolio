@@ -8,8 +8,8 @@ $(document).ready(function(){
         }
         var divname = this.name;
         console.log(divname);
-        $("#"+active ).hide( "slide", {times: 10, distance: 1500}, 1000);
-        $("#"+divname).show( "slide", {times: 10, distance: 1500, direction: "right"}, 1000);
+        $("#"+active ).hide( "slide", {times: 10, distance: 1500}, 300);
+        $("#"+divname).delay(300).show( "slide", {times: 10, distance: 1500, direction: "right"}, 1000);
         active = divname;
     });
 });

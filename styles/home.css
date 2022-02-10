@@ -30,6 +30,14 @@ h3 {
     margin-top: 4em;
 }
 
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+
 header > nav {
     width: 90%;
     list-style: none;
@@ -71,8 +79,10 @@ header > nav > li > a:hover {
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(-60deg) brightness(75%) contrast(100%);
 }
 
-#about__me > .box > h1 {
+#about__me > .box > h2 {
     font-size: 24px;
+    color: #B81447;
+    font-weight: 600;
 }
 
 .box {
@@ -80,7 +90,7 @@ header > nav > li > a:hover {
     margin: auto;
     text-align: justify;
     text-indent: 2em;
-    margin-top: 7%;
+    margin-top: 6%;
 }
 
 .box__life {
@@ -105,13 +115,20 @@ header > nav > li > a:hover {
     color: #B81447;
 }
 
-#skills > p {
-    color: #8b8b8b;
-    font-size: 22px;
-    max-width: 980px;
-    padding: 0.75em 2em;
-    margin: auto;
-    line-height: 1.5em;
+#about__me > .box > p > span > a {
+    text-decoration: none;
+    color: #B81447;
+    cursor: pointer;
+}
+
+#skills {
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 1280px) {
+    .hide {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -152,8 +169,25 @@ header > nav > li > a:hover {
         top: 50%;
         transform: translateY(-50%);
     }
-}
 
-.hide {
-    display: none;
+    .box {
+        margin-top: 105vh;
+        min-height: 92vh;
+    }
+
+    .box > hr {
+        margin-left: 16%;
+    }
+
+    .box__life {
+        display: none;
+    }
+
+    #about__me > .box > p {
+        color: #8b8b8b;
+        font-size: 20px;
+        padding: 0.75em 2em;
+        margin: auto;
+        line-height: 1.5em;
+    }
 }

@@ -11,31 +11,27 @@ body {
 }
 
 main {
-    margin-top: 1.5%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 h1 {
     color: #B81447; 
-    font-size: 6em; 
+    font-size: 5em; 
     font-weight: 600;
 }
 
 h2, h3 {
-    font-size: 1.5em; 
+    font-size: 1.4em; 
     color: #8b8b8b;
     margin-top: 1em;
 }
 
 h3 {
-    margin-top: 4em;
-}
-
-form {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    max-width: 700px;
-    margin: auto;
+    margin-top: 3em;
 }
 
 header > nav {
@@ -48,25 +44,21 @@ header > nav {
 
 header > nav > li {
     font-size: 22px;
-    color: #dadada;
-    text-decoration: none;
     margin: 40px 16px;
     font-weight: 800;
+    color: #dadada;
 }
 
 header > nav > li > a {
-    text-decoration: none;
-    color: #dadada;
-    transition: all 0.3s ease;
-}
-
-
-header > nav > li:hover {
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+    transition: all 0.3s ease-in;
 }
 
 header > nav > li > a:hover {
-    color: #B81447;
+    color: rgb(184, 20, 71);
+    text-decoration-color: rgba(184, 20, 71, 1);
 }
 
 .footer__contacts > a > img {
@@ -131,28 +123,50 @@ header > nav > li > a:hover {
     }
 }
 
-@media screen and (max-width: 1280px) {
-    main {
-        margin-top: 1.5%;
+@media screen and (max-width: 1279px) {
+
+    h1 {
+        font-size: 3em;
+        min-width: 100%;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+        padding: 0em 2em;
+        margin-top: 1em;
+    }
+
+    #align__mobile {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 90vh;
+    }
+
+    .box__life {
+        margin: 0 0 0 -20px;
+    }
+
+    .hide {
+        display: none;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    
-    main {
-        margin-top: 0;
-    }
+@media screen and (max-width: 480px) {
 
     header {
         display: none;
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2em;
+        min-width: 100%;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     h1, h2 {
@@ -164,15 +178,16 @@ header > nav > li > a:hover {
     }
 
     #align__mobile {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        height: 100vh;
     }
 
     .box {
-        margin-top: 105vh;
-        min-height: 92vh;
+        min-height: 95vh;
     }
 
     .box > hr {
@@ -184,10 +199,13 @@ header > nav > li > a:hover {
     }
 
     #about__me > .box > p {
-        color: #8b8b8b;
         font-size: 20px;
         padding: 0.75em 2em;
         margin: auto;
         line-height: 1.5em;
+    }
+
+    .hide {
+        display: block;
     }
 }

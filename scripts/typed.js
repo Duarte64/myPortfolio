@@ -1,5 +1,5 @@
 var typed = new Typed(".auto-input", {
-    strings: ["Bem Vindo", "歡迎", "Welcome", "Bienvenido", "ようこそ", "Welkom", "желанный", "Bienvenue", "Selamat Datang"],
+    strings: ["Bem Vindo", "歡迎", "Selamat Datang", "Welcome", "Bienvenido", "ようこそ", "Welkom", "желанный", "Bienvenue"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

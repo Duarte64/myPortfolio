@@ -1,16 +1,15 @@
 import { useEffect, useMemo } from 'react';
 import ScrollReveal from 'scrollreveal';
-import { Link } from 'react-router-dom';
 import {HeaderContainer, Navigation} from './style';
 import logo from '../../assets/images/logo.png';
 
 export default function Header() {
     
     const itens = useMemo(() => [
-        'Home',
+        'Intro',
         'About',
+        'Jobs',
         'Projects',
-        'Contact',
         'Résumé',
     ], [])
 
@@ -27,7 +26,7 @@ export default function Header() {
             <Navigation>
                 {itens.map((item, index) => 
                     <li className={item}>
-                        <Link to={`/${item.toLowerCase()}`}><span>{index+1}. </span>{item}</Link>
+                        <a href={`#${item.toLowerCase()}`}><span>{index+1}. </span>{item}</a>
                     </li>
                 )}
             </Navigation>

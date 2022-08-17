@@ -6,6 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Nunito', sans-serif;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -15,5 +16,25 @@ export default createGlobalStyle`
 
     button {
         cursor: pointer;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: ${({theme}) => theme.colors.red.main};
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
 `;

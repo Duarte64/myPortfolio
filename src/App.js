@@ -1,31 +1,23 @@
 import React from 'react';
-
-import { ThemeProvider } from 'styled-components';
+import Header from './components/Header';
+import Home from './modules/Home';
+import About from './modules/About';
+import Contact from './modules/Contact';
+import Projects from './modules/Projects';
 import GlobalStyles from './assets/styles/global';
 import defaultTheme from './assets/styles/themes/default';
-
-import { BrowserRouter } from 'react-router-dom';
-
-import Router from './routes';
-
-import Header from './components/Header';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
     return (
         <React.Fragment>
             <ThemeProvider theme={defaultTheme}>
                 <GlobalStyles />
-                    <BrowserRouter>
-                        <Header/>
-                    </BrowserRouter>
+                    <Header/>
                     <Home />
                     <About />
                     <Projects />
-                    <Contact />
+                    {/* <Contact /> */}
             </ThemeProvider>
         </React.Fragment>
     );

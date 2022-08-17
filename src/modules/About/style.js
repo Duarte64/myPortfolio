@@ -7,7 +7,11 @@ export const Container = styled.section`
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    padding: 100px 12px;
+    min-height: 70vh;
+
+    @media screen and (max-width: 768px) {
+        padding: 8px;
+    }
 
     div {
         width: 100%;

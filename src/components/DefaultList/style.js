@@ -16,6 +16,7 @@ export const ListContainer = styled.ul`
         min-width: 170px;
         display: flex;
         align-items: center;
+        margin-bottom: 4px;
 
         span {
             font-size: 14px;

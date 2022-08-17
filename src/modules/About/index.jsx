@@ -9,7 +9,8 @@ export default function About() {
 
     useEffect(() => {
         ScrollReveal().reveal('#about' , {duration: 600, origin:"bottom", distance: "2em", delay: 1000 , easing: "ease-in-out"}); 
-    }, [])
+    }, []);
+    
     return(
         <Container id="about">
             <AutoTypeTitle

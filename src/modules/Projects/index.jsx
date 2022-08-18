@@ -3,7 +3,7 @@ import ScrollReveal from "scrollreveal";
 import { Separator } from "../../components/Separator";
 import { Container } from "./style";
 import AutoTypeTitle from "../../components/AutoTypeTitle";
-import JobPost from "../../components/JobPost";
+import ProjectPost from "./components/ProjectPost";
 import { projectsData } from "./data/projects";
 
 export default function About() {
@@ -14,12 +14,12 @@ export default function About() {
     return(
         <Container id="projects">
             <AutoTypeTitle
-                strings={["PROJECTS", "项目", "PROYECTOS", "プロジェクト", "PROJECTEN", "PROJETS", "PROJEK"]}
+                strings={["PROJECTS", "项目", "PROYECTOS", "PROJETOS", "プロジェクト", "PROJECTEN"]}
                 fontSize="24px"
                 cursorSize="32px"
             />
             <Separator />
-            {projectsData.map(project => <JobPost project={project}/>)}
+            {projectsData.map(project => <ProjectPost project={project}/>)}
         </Container>
     );
 }

@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
+export const CustomLink = styled.a`
+    text-decoration: none;
+    & + & {
+        margin-top: 16px;
+    }
+`;
+
 export const Container = styled.div`
+    overflow: hidden;
     transition: 
         transform .25s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
     &:hover {
-        transform: scale3d(1.08, 1.08, 1);
+        transform: scale3d(1.05, 1.05, 1);
         z-index: 1;
         cursor: pointer;
     }
-
-    & + & {
-        margin-top: 16px;
-    }
+    
 `;
 
 export const CompleteDescription = styled.div`

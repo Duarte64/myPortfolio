@@ -2,6 +2,8 @@ import { useEffect, useMemo } from 'react';
 import ScrollReveal from 'scrollreveal';
 import {HeaderContainer, Navigation} from './style';
 import logo from '../../assets/images/logo.png';
+import CV from '../../assets/documents/CV-Duarte.pdf'
+import { Download } from 'react-bootstrap-icons';
 
 export default function Header() {
     
@@ -10,7 +12,6 @@ export default function Header() {
         'About',
         'Jobs',
         'Projects',
-        'Résumé',
     ], [])
 
     useEffect(() => {
@@ -29,6 +30,9 @@ export default function Header() {
                         <a href={`#${item.toLowerCase()}`}><span>{index+1}. </span>{item}</a>
                     </li>
                 )}
+                <li>
+                    <a href={CV} download="CV_GabrielDuarte"><Download />Résumé</a>
+                </li>
             </Navigation>
         </HeaderContainer>
     );

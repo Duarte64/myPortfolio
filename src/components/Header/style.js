@@ -34,6 +34,15 @@ export const Navigation = styled.nav`
                 color: ${({theme}) => theme.colors.red.main};
                 font-weight: bolder;
                 margin-right: 0px;
+                margin-left: 6px;
+
+                a {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    gap: 4px;
+                }
+                
         }
 
         a {

@@ -13,7 +13,7 @@ export default function Home() {
     }, []);
 
     return(
-        <Container>
+        <Container id="intro">
             <img className="image" src={memoji} alt="Memoji of myself"/>
             <AutoTypeTitle 
                 strings={["Bem Vindo", "歡迎", "Welcome", "Bienvenido", "ようこそ", "Welkom", "Bienvenue"]}

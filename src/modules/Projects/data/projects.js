@@ -9,7 +9,7 @@ export const projectsData = [
     {
         id: 3,
         title: 'Chatbot',
-        description: "This project was first designed for a college work in Natural Language Processing, but I really was into the idea of turning it in a web page with a functional chatbot that comunicates with an API an could do all the CRUD operations just with chating. In this moment this project is being remodelated and will get an even better.",
+        description: "This project was first designed for a college work in Natural Language Processing, but I really was into the idea of turning it in a web page with a functional chatbot that comunicates with an API and could do all the CRUD operations just with chating. In this moment this project is being remodelated and will get an even better version.",
         tags: ['HTML5', 'CSS3', 'Node.js', 'Express', 'Dialogflow ES'],
         link: "https://chatbot-consultorio-medico.glitch.me"
     },

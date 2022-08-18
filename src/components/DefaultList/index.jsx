@@ -1,10 +1,11 @@
 import propTypes from "prop-types";
+import { ChevronRight } from "react-bootstrap-icons";
 import { ListContainer } from "./style";
 export default function DefaultList({items}) {
     return (
         <ListContainer>
             {items.map(item => (
-                <li><span>&#9655;</span> {item}</li>
+                <li><ChevronRight />{item}</li>
             ))}
         </ListContainer>
     )

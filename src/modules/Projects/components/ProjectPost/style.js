@@ -35,7 +35,3 @@ export const CompleteDescription = styled.div`
         margin: 0px;
     }
 `;
-
-export const ImagePreview = styled.div`
-
-`;

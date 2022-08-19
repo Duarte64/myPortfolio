@@ -1,16 +1,21 @@
-import itau from '../../../assets/images/itau.png';
+import itau from '../../../assets/images/itau.jpg';
+import wikimee from '../../../assets/images/wikimee.jfif';
+import {Bank} from 'react-bootstrap-icons';
+import {Basket} from 'react-bootstrap-icons';
 
 export const jobsData = [
     {
         id: 1,
         title: 'Itaú Unibanco',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quisquam tempore, consequuntur ducimus earum adipisci deserunt. Accusamus commodi odio explicabo asperiores ab magni placeat aliquam dignissimos deserunt, ipsam expedita! Asperiores sint culpa suscipit quidem sit est dolore in soluta fugit.',
+        description: 'I had the pleasure of working as an intern in the biggest financial enterprise in all Latin America. There I learned much about all the process involved in software development and gave my first steps into writing code, where I decided to work in Front-end, but also learned a lot about Back-end and DBA.',
         image: itau,
+        icon: <Bank size={200} />,
     },
     {
         id: 2,
         title: 'Wikimee',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quisquam tempore, consequuntur ducimus earum adipisci deserunt. Accusamus commodi odio explicabo asperiores ab magni placeat aliquam dignissimos deserunt, ipsam expedita! Asperiores sint culpa suscipit quidem sit est dolore in soluta fugit.',
-        image: itau,
+        description: 'Wikimee is a brazilian startup that develops a software to manage and connect marketing teams with big companies, providing solutions to more than 10 enterprises. In my day to day I work in the Front-end using HTML, CSS, TypeScript, React, Redux, Netlify, etc.',
+        image: wikimee,
+        icon: <Basket size={180} />,
     },
 ]

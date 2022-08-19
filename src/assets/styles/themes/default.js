@@ -9,6 +9,7 @@ export default {
         gray: {
             main: '#8b8b8b',
             secondary: '#dadada',
+            alternative: '#1D1D1D'
         },
     },
 };

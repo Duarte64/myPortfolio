@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './modules/Home';
+import Jobs from './modules/Jobs';
 import About from './modules/About';
 import Contact from './modules/Contact';
 import Projects from './modules/Projects';
@@ -17,6 +18,7 @@ function App() {
                     <Home />
                     <About />
                     <Projects />
+                    <Jobs />
                     {/* <Contact /> */}
             </ThemeProvider>
         </React.Fragment>

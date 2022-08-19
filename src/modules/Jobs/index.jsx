@@ -13,7 +13,7 @@ const Jobs = () => {
     }, []);
 
     return (
-        <Container id="projects">
+        <Container id="jobs">
             <AutoTypeTitle
                 strings={["CAREER", "职业", "CARREIRA", "キャリア"]}
                 fontSize="24px"

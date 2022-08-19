@@ -10,8 +10,8 @@ export default function Header() {
     const itens = useMemo(() => [
         'Intro',
         'About',
-        'Jobs',
         'Projects',
+        'Jobs',
     ], [])
 
     useEffect(() => {

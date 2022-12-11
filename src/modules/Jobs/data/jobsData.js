@@ -7,7 +7,7 @@ export const jobsData = [
     {
         id: 1,
         title: 'Itaú Unibanco',
-        description: 'I had the pleasure of working as an intern in the biggest financial enterprise in all Latin America. There I learned much about all the process involved in software development and gave my first steps into writing code, where I decided to work in Front-end, but also learned a lot about Back-end and DBA.',
+        description: 'I had the pleasure of working as an intern in the biggest financial enterprise in all Latin America. There I learned much about all the process involved in software development and gave my first steps into writing code, where I decided to work as FullStack, where I can study and work a lot in Front-end and Back-end.',
         image: itau,
         icon: <Bank size={200} />,
     },

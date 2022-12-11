@@ -30,7 +30,7 @@ export default function Home() {
                 }}
             />
             <p className="text">
-                My name is Gabriel Duarte and I'm a FrontEnd Jr. Software Developer raised in São Paulo, Brazil. 
+                My name is Gabriel Duarte and I'm a FullStack Jr. Software Developer raised in São Paulo, Brazil. 
                 Currently, I’m focused on building some new products at Wikimee.
             </p>
             <Contacts/>
